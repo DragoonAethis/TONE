@@ -1,0 +1,24 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_listening_port"
+        android:inputType="number"
+        android:numeric="integer"
+        android:key="rtsp_port"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_listening_port"
+        android:summary="@string/pref_description_listening_port" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="pin_to_screen"
+        android:title="@string/pref_title_pin_to_screen"
+        android:summary="@string/pref_description_pin_to_screen" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="mute_phone"
+        android:title="@string/pref_title_mute_phone"
+        android:summary="@string/pref_description_mute_phone" />
+</PreferenceScreen>

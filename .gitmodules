@@ -1,0 +1,3 @@
+[submodule "libstreaming"]
+	path = libstreaming
+	url = https://github.com/DragoonAethis/libstreaming

@@ -1,0 +1,16 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header
+        android:fragment="eu.dragonic.tone.streamer.SettingsActivity$GeneralPreferenceFragment"
+        android:icon="@drawable/prefs_general"
+        android:title="@string/pref_header_general" />
+
+    <header
+        android:fragment="eu.dragonic.tone.streamer.SettingsActivity$VideoPreferenceFragment"
+        android:icon="@drawable/prefs_video"
+        android:title="@string/pref_header_video" />
+
+    <header
+        android:fragment="eu.dragonic.tone.streamer.SettingsActivity$AudioPreferenceFragment"
+        android:icon="@drawable/prefs_audio"
+        android:title="@string/pref_header_audio" />
+</preference-headers>

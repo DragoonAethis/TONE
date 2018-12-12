@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_label">TONE</string>
+    <string name="app_name">TONE Streamer</string>
+
+    <!-- Streaming buttons and overlay strings -->
+    <string name="stream_button">Stream</string>
+    <string name="stop_streaming_button">Stop Streaming</string>
+    <string name="switch_camera_button">Switch Camera</string>
+    <string name="settings_button">Settings</string>
+
+    <!-- Overlay strings -->
+    <string name="requesting_permissions">"Requesting permissions..."</string>
+    <string name="permissions_granted">Permissions granted!</string>
+    <string name="permissions_denied">Permissions denied!</string>
+    <string name="permissions_denied_description">TONE requires camera and storage permissions to capture the stream.</string>
+    <string name="got_it">Got it</string>
+
+    <string name="stream_connected">Connected!</string>
+    <string name="stream_disconnected">Disconnected!</string>
+    <string name="stream_error">STREAMING SERVER ERROR!\n%s</string>
+
+
+    <!-- Strings related to Settings -->
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Settings: General (listening port) -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_listening_port">Listening port</string>
+    <string name="pref_description_listening_port">TCP port on which the RTSP server will listen for incoming connections from OBS.</string>
+    <string name="pref_default_listening_port">8086</string>
+
+    <string name="pref_title_pin_to_screen">Pin app while streaming</string>
+    <string name="pref_description_pin_to_screen">If enabled, TONE will pin itself to the screen, preventing navigation, when you hide controls by tapping on the stream preview.</string>
+
+    <string name="pref_title_mute_phone">*NYI* Mute phone while streaming</string>
+    <string name="pref_description_mute_phone">*NYI* Automatically mute the phone when streaming starts, preventing interruptions.</string>
+
+    <!-- Video (resolution, bitrate) -->
+    <string name="pref_header_video">Video</string>
+
+    <string name="pref_title_video_codec">*NYI* Video Codec</string>
+    <string name="pref_description_video_codec">*NYI* Codec with which the stream will be encoded.</string>
+    <string name="pref_default_video_codec">h264</string>
+    <string-array name="pref_video_codec_titles">
+        <item>H.264</item>
+        <!--<item>VP8</item>-->
+    </string-array>
+    <string-array name="pref_video_codec_values">
+        <item>h264</item>
+        <!--<item>vp8</item>-->
+    </string-array>
+
+    <string name="pref_title_video_resolution">Video Resolution</string>
+    <string name="pref_description_video_resolution">Video resolution which will be streamed to all clients.</string>
+    <string name="pref_default_video_resolution">1280x720</string>
+    <string-array name="pref_video_resolutions">
+        <item>1920x1080</item>
+        <item>1440x1080</item>
+        <item>1280x720</item>
+        <item>720x480</item>
+        <item>640x480</item>
+    </string-array>
+
+    <string name="pref_title_video_bitrate">Video Bitrate</string>
+    <string name="pref_description_video_bitrate">Video bitrate to target while encoding. Higher values means more bandwidth used, but also higher quality video.</string>
+    <string name="pref_default_video_bitrate">8000000</string>
+    <string-array name="pref_video_bitrate_titles">
+        <item>10Mbps (Very High Quality)</item>
+        <item>8Mbps</item>
+        <item>6Mbps</item>
+        <item>4Mbps</item>
+        <item>3Mbps</item>
+        <item>2Mbps</item>
+        <item>1Mbps (Very Much Not)</item>
+        <item>512Kbps (Don\'t)</item>
+    </string-array>
+    <string-array name="pref_video_bitrate_values">
+        <item>10000000</item>
+        <item>8000000</item>
+        <item>6000000</item>
+        <item>4000000</item>
+        <item>3000000</item>
+        <item>2000000</item>
+        <item>1000000</item>
+        <item>512000</item>
+    </string-array>
+
+    <!-- Audio (resolution, bitrate) -->
+    <string name="pref_header_audio">Audio</string>
+
+    <string name="pref_title_audio_codec">*NYI* Audio Codec</string>
+    <string name="pref_description_audio_codec">*NYI* Codec with which the audio stream will be encoded.</string>
+    <string name="pref_default_audio_codec">aac</string>
+    <string-array name="pref_audio_codec_titles">
+        <item>AAC</item>
+        <item>None (Disable Audio)</item>
+        <!--<item>Opus</item>-->
+    </string-array>
+    <string-array name="pref_audio_codec_values">
+        <item>aac</item>
+        <item>none</item>
+        <!--<item>opus</item>-->
+    </string-array>
+
+    <string name="pref_title_audio_bitrate">Audio Bitrate</string>
+    <string name="pref_description_audio_bitrate">Bitrate at which the audio will be encoded. Higher values mean higher quality audio.</string>
+    <string name="pref_default_audio_bitrate">160000</string>
+    <string-array name="pref_audio_bitrate_titles">
+        <item>256 Kbps</item>
+        <item>160 Kbps</item>
+        <item>128 Kbps</item>
+        <item>96 Kbps</item>
+        <item>72 Kbps</item>
+        <item>48 Kbps (Why)</item>
+    </string-array>
+    <string-array name="pref_audio_bitrate_values">
+        <item>256000</item>
+        <item>160000</item>
+        <item>128000</item>
+        <item>96000</item>
+        <item>72000</item>
+        <item>48000</item>
+    </string-array>
+
+    <string name="pref_title_audio_frequency">Audio Sampling Frequency</string>
+    <string name="pref_description_audio_frequency">Frequency with which the audio will be sampled. For best results, set this to the frequency you\'re using in the final mixed stream on your PC.</string>
+    <string name="pref_default_audio_frequency">48000</string>
+    <string-array name="pref_audio_frequency_titles">
+        <item>48 kHz</item>
+        <item>44.1 kHz</item>
+    </string-array>
+    <string-array name="pref_audio_frequency_values">
+        <item>48000</item>
+        <item>44100</item>
+    </string-array>
+</resources>

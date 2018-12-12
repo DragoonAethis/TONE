@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:title="@string/pref_title_video_codec"
+        android:summary="@string/pref_description_video_codec"
+        android:entries="@array/pref_video_codec_titles"
+        android:entryValues="@array/pref_video_codec_values"
+        android:defaultValue="@string/pref_default_video_codec"
+        android:key="video_codec"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <ListPreference
+        android:title="@string/pref_title_video_resolution"
+        android:summary="@string/pref_description_video_resolution"
+        android:entries="@array/pref_video_resolutions"
+        android:entryValues="@array/pref_video_resolutions"
+        android:defaultValue="@string/pref_default_video_resolution"
+        android:key="video_resolution"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <ListPreference
+        android:title="@string/pref_title_video_bitrate"
+        android:summary="@string/pref_description_video_bitrate"
+        android:entries="@array/pref_video_bitrate_titles"
+        android:entryValues="@array/pref_video_bitrate_values"
+        android:defaultValue="@string/pref_default_video_bitrate"
+        android:key="video_bitrate"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+</PreferenceScreen>

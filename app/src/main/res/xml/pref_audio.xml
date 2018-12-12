@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:title="@string/pref_title_audio_codec"
+        android:summary="@string/pref_description_audio_codec"
+        android:entries="@array/pref_audio_codec_titles"
+        android:entryValues="@array/pref_audio_codec_values"
+        android:defaultValue="@string/pref_default_audio_codec"
+        android:key="audio_codec"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <ListPreference
+        android:title="@string/pref_title_audio_bitrate"
+        android:summary="@string/pref_description_audio_bitrate"
+        android:entries="@array/pref_audio_bitrate_titles"
+        android:entryValues="@array/pref_audio_bitrate_values"
+        android:defaultValue="@string/pref_default_audio_bitrate"
+        android:key="audio_bitrate"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <ListPreference
+        android:title="@string/pref_title_audio_frequency"
+        android:summary="@string/pref_description_audio_frequency"
+        android:entries="@array/pref_audio_frequency_titles"
+        android:entryValues="@array/pref_audio_frequency_values"
+        android:defaultValue="@string/pref_default_audio_frequency"
+        android:key="audio_frequency"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+</PreferenceScreen>
